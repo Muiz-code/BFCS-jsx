@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "SUSE", system-ui;
+  max-width: 100%;
+}
+.line-height {
+  line-height: 80px;
+}
+.font-family {
+  font-family: "SUSE", system-ui;
+}
+.list {
+  list-style-type: square;
+}
+
+.menu {
+  @apply list-none flex;
+}
+
+.menu-item {
+  @apply mr-4 text-gray-800 no-underline hover:underline;
+}
+
+.menu-item.active {
+  text-decoration: underline;
+}
+
+.menu-button {
+  @apply text-gray-800 no-underline hover:underline;
+}
+
+.submenu {
+  @apply absolute bg-white shadow-md top-[60px];
+}
+.hide {
+  display: none;
+}
+
+@media (max-width: 488px) {
+  nav {
+    width: 80%;
+  }
+  .submenu {
+    @apply absolute bg-white shadow-md top-[80px];
+  }
+  .h1 {
+    font-size: 25px;
+  }
+  .h2 {
+    font-size: 13px;
+  }
+  .items li,
+  .h3 {
+    font-size: 12px;
+  }
+  .h4 {
+    font-size: 20px;
+  }
+  .jb {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .px {
+    @apply px-[20px];
+  }
+  .px2 {
+    @apply px-[2%];
+  }
+  .py {
+    @apply py-2;
+  }
+  .gap {
+    gap: 7px;
+    padding: 0px 10px 10px 10px;
+  }
+  .none {
+    display: none;
+  }
+  .show {
+    display: flex;
+  }
+  .p0 {
+    padding: 0px;
+  }
+  .p5 {
+    @apply p-5;
+  }
+  .w100 {
+    width: 100%;
+  }
+  .w10 {
+    width: 10%;
+  }
+  .h50vh {
+    height: 50vh;
+  }
+  .h5vh {
+    height: 5vh;
+  }
+  .line-height {
+    line-height: 30px;
+  }
+  .line-height1 {
+    line-height: 0px;
+  }
+
+  .carouselItems img,
+  .carouselItem img,
+  .carouselItemAbout img {
+    width: 20%;
+  }
+  .carouselItems {
+    margin-top: 200px;
+    padding: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .carouselItems h1,
+  .carouselItem h1,
+  .carouselItemAbout h1 {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .carouselItems p {
+    font-size: 16px;
+  }
+  .carouselItem p,
+  .carouselItemAbout p {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+  .btnMobile {
+    width: 50%;
+  }
+  .btnMobileW {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .p20 {
+    @apply p-[20px];
+  }
+  .p10 {
+    @apply p-[2px];
+  }
+  .aboutiMG {
+    flex-direction: column;
+  }
+  .aboutiMG img {
+    width: 100%;
+  }
+  .WCU {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carouselItem {
+    margin-top: 90px;
+    padding: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .carouselItemAbout {
+    margin-top: 80px;
+    padding: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .contact {
+    margin-top: 150px;
+  }
+  .client {
+    flex-direction: column;
+  }
+}
